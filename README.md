@@ -1,9 +1,35 @@
 # respkit-tui
 
+[![CI](https://github.com/gracee3/respkit-tui/actions/workflows/ci.yml/badge.svg)](https://github.com/gracee3/respkit-tui/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Rust](https://img.shields.io/badge/rust-1.85%2B-orange.svg)](Cargo.toml)
+
 Keyboard-driven Rust TUI for operating a `respkit` adjudication ledger through the Python service layer.
 
 The Rust app owns rendering, keyboard navigation, local state, and stdio JSON-RPC transport.
 The Python backend remains the source of truth for ledger semantics, validation, approved-output derivation, and action execution.
+
+Repository: https://github.com/gracee3/respkit-tui
+
+## Status
+
+Practical v1 scaffold:
+- usable keyboard-first operator console
+- real stdio JSON-RPC backend integration
+- no ledger semantics reimplemented in Rust
+- ready for private task-adapter integration
+
+## Quick Start
+
+```bash
+cargo run
+```
+
+On first launch:
+- enter a backend command
+- enter a ledger path
+- optionally enter a task name
+- press `Enter`
 
 ## Current v1 scope
 

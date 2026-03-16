@@ -6,6 +6,8 @@ rust-version = "1.85"
 description = "Keyboard-driven Rust TUI for the respkit ledger service over stdio JSON-RPC"
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/gracee3/respkit-tui"
+homepage = "https://github.com/gracee3/respkit-tui"
 keywords = ["tui", "terminal", "json-rpc", "ledger", "ratatui"]
 categories = ["command-line-interface"]
 
