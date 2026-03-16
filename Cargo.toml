@@ -1,0 +1,23 @@
+[package]
+name = "respkit-tui"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Keyboard-driven Rust TUI for the respkit ledger service over stdio JSON-RPC"
+license = "MIT"
+readme = "README.md"
+keywords = ["tui", "terminal", "json-rpc", "ledger", "ratatui"]
+categories = ["command-line-interface"]
+
+[dependencies]
+anyhow = "1.0"
+crossterm = "0.28"
+dirs = "6.0"
+ratatui = "0.29"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+toml = "0.8"
+
+[dev-dependencies]
+tempfile = "3.15"
